@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+.product {
+    display: block;
+    border: 1px solid red;
+    width: 100%; /* WE'RE TELLING THE IMG TO TAKE 100% of the cell/ parent */
+
+}

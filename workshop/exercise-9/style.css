@@ -1,13 +1,43 @@
+  
 body {
     margin: 0;
 }
 
 .nav {
     background-color: #383737;
+    padding:0px;
 }
 
 .nav-dropdown {
+    font-size: 1.5rem;
     color: #fff;
     text-decoration: none;
-    display: inline-block;
+    position: relative;
+    padding: 20px;
+    display: block;
+}
+
+.list {
+position: absolute;
+top:44px;
+left: 0px;
+display: none;
+}
+
+ul.dropdown-items {
+    padding:0px;
+}
+
+.dropdown-items > li {
+    list-style-type: none;
+    background-color:rgba(65, 131, 215, 1) ;
+    color: white;
+    padding:20px;
+}
+.dropdown-items > li:hover {
+    background-color: rgba(137, 196, 244, 1)
+}
+
+.nav-dropdown:hover  > .list{  /* QUESION ABOUT THIS why cant i .nav-dropdown:hover  > .list and close the span in html*/
+    display: block;
 }

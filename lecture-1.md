@@ -65,7 +65,7 @@ The same site _fixed_
 
 ---
 
-### Responsive (pros)
+### Responsive (pros) (using media querys)
 
 - Good for heavily stacked information websites
 - Easier for large forms and complex call-to-actions

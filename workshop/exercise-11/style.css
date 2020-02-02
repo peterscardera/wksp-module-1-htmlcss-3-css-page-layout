@@ -1,50 +1,50 @@
 .header {
-
+  text-align: center;
 }
-
 .facts {
-
+  border: 1px solid darkgrey;
+  border-radius: 1%;
+  display:flex;
+}
+tbody{
+  width:100%;
 }
 
-tr {
-
+.facts tr {
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+justify-items: left;
+gap: 10vw ; 
+padding: 10px;
 }
 
-th {
-
-}
-
-td,
-th {
-
+tr:nth-child(even) {
+  background-color: lightgrey;
 }
 
 h3 {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
-/* Using CSS grid */
 .links {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-column-gap: 10px;
 }
 
 .links > li {
+list-style-type: none;
+background-color:rgba(44, 130, 201, 1);
+width:100%;
+padding: 15px 0px;
+text-align: center;
 }
-
-/* 
-    Using Flexbox
-    You can comment / uncomment this code using cmd+/
-*/
-
-/* 
-.links {
-
-}
-
-.links > li {
-
-}
-*/
 
 .links a {
-
+text-decoration: none;
+color:white;
 }
+
+ul {
+  padding: 0px;
+  }

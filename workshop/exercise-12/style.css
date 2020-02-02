@@ -1,35 +1,52 @@
 body {
     margin: 0;
     font-family: Poppins, sans-serif;
+    max-height: 80vh;
 }
 
 .header {
-
+    text-align: center;
+    background-color: rgba(25, 181, 254, 1);
+    color: white;
+    padding: 10px 0px;
 }
 
 .registration-form {
-
+    box-shadow:10px 10px 38px 0px rgba(0,0,0,0.75);
+    max-width: 80vw;
+    margin: 0 auto;
+    padding:15px;
+    height:100%;   
 }
-
+.input.text-field{
+    
+}
 .text-field {
-
+    display:block;
+    margin: 5px auto;
+    max-width: 250px;
+    padding:5px;
+    width:100%;
+    border-radius: 3px;
+    border: 1px solid rgba(30, 139, 195, 1);
+}
+.text-field:focus {
+    border: 1px solid rgba(44, 130, 201, 1);
+    box-shadow: 0 0 10px rgba(44, 130, 201, 1) ;
+    outline: none;
 }
 
-.radio-label,
-.checkbox-label {
-
+.radio-label, .checkbox-label {
+    text-align: left;
 }
 
 label {
-
-}
-
-.section {
-
+  text-align: center;
+  display: block; 
 }
 
 .section > label {
-
+text-align: left;
 }
 
 select {
@@ -37,13 +54,36 @@ select {
 }
 
 textarea {
+display:block;
+background-color: lightgray;
+width:90%;
+height:auto;
+margin: 15px auto;
+}
 
+label > textarea {
+    height: 12vh;
 }
 
 .form-button {
-
+    border: 1px solid rgba(30, 139, 195, 1);
+    padding: 10px 20px;
+    margin :10px auto;
+    display: block;
+    cursor: pointer;
 }
 
 .form-button:hover {
-    
+    background-color: #0096fb;
+    color: #fff;
+}
+
+.form-button:focus {
+    outline:none;
+    border: 1px solid rgba(44, 130, 201, 1);
+    box-shadow: 0 0 10px rgba(44, 130, 201, 1)
+}
+textarea:focus {
+    outline:none;
+    border: 1px solid rgba(44, 130, 201, 1);
 }

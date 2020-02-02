@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh; /*we need a height set for the container!!*/
+    align-items: center;
+    justify-items: center;
+}
+.navigation {
+    background-color: darkgrey;
+    padding: 20px 100%;
+    color:white
+
+}
+
+.main {
+   
+}
+
+.footer {
+    background-color: darkgrey;
+    padding: 20px 100%;
+    color:white
+}

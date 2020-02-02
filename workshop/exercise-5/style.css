@@ -1,0 +1,17 @@
+body {
+    margin:0;
+    padding:0;
+    background-image: url('/workshop/exercise-5/imgs/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* vh  */
+    color: ivory;
+}

@@ -10,7 +10,48 @@ body {
 }
 
 .fast {
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fade {
+  0% {
+    opacity: .3;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: .8;
+    transform: translateX(0%);
+  }
 }
 
 .cool {
+  text-transform: uppercase;
+  background-color: rgba(65, 131, 215, 1);
+  border: 0;
+  padding: 15px 25px;
+  border-radius: 5%;
+  color: aliceblue;
+  box-shadow: 1px 1px 6px 1px black; /*in chrome inspect easy way to select this */
+}
+
+.cool:hover {
+  cursor: pointer;
+  animation-name: bigger;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bigger {
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+
 }

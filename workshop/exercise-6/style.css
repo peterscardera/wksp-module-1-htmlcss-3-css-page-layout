@@ -1,0 +1,57 @@
+/* forced myself to practice with grid layout only*/
+
+body, h1, h2, p {
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    display: grid;
+    grid-template-rows: 1fr 25% 40% 25%;
+    grid-template-columns:1fr 45% 1fr ;
+    row-gap: 10px;
+    justify-items: center;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 1rem;
+    grid-column:  2 / 3;
+    border: 1px solid black;
+    border-radius: 4%;
+    justify-self: center;
+    align-self: center;
+    opacity: .7;
+    margin-top: 10px;
+    padding: 5px 30px;
+
+}
+h2 {
+    font-size: 1.5em;
+    grid-column:  2 / 3;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1em;
+    grid-column:  2 / 3;
+    line-height: 20px;
+    text-align: center;
+}
+
+.link {
+    font-size: 1em;
+    grid-column:  2 / 3;
+    text-decoration: none;
+    color: cadetblue;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .link::after {
+    content: '>';
+    padding-left: 10px;
+  }

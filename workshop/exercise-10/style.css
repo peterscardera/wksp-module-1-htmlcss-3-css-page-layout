@@ -5,22 +5,47 @@ body {
 .container {
     display: grid;
     min-height: 100vh;
+    grid-template-rows: 5vh 1fr 5vh ;
+    grid-template-areas: 
+    "nav nav nav"
+    "aside main main"
+    "aside footer footer";
+
 }
 
 .nav {
-    height: 50px;
+    height: 5vh;
+    width: 100vw;
     background-color: rebeccapurple;
+    grid-area: nav;
 }
 
 .aside {
     background-color: forestgreen;
+    grid-area: aside;
 }
 
 .main {
+    height: auto;
+    grid-area: main;
+    justify-self: center;
 
 }
 
 .footer {
-    height: 100px;
+    height: 5vh;
     background-color: midnightblue;
+    grid-area: footer;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .container {
+        grid-template-areas: 
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+        grid-template-rows: 5vh 1fr 5vh;
+    }
+    
 }
